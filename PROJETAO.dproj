@@ -83,7 +83,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="..\..\Documents\RAD Studio\Projects\PROJETO.pas">
-            <Form>Form3</Form>
+            <Form>ViewPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
