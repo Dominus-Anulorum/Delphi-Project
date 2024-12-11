@@ -1,0 +1,33 @@
+object ServiceConexao: TServiceConexao
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 537
+  Width = 648
+  object DataSource1: TDataSource
+    DataSet = pFIBDataSet1
+    Left = 256
+    Top = 88
+  end
+  object Conexao: TpFIBDatabase
+    DBName = 'C:\DATA_BASES\DATABASE.FDB'
+    DBParams.Strings = (
+      'user_name=localhost'
+      'password=3010'
+      'sql_role_name=')
+    SQLDialect = 1
+    Timeout = 0
+    WaitForRestoreConnect = 0
+    Left = 72
+    Top = 32
+  end
+  object pFIBTransaction1: TpFIBTransaction
+    DefaultDatabase = Conexao
+    Left = 192
+    Top = 184
+  end
+  object pFIBDataSet1: TpFIBDataSet
+    Database = Conexao
+    Left = 392
+    Top = 160
+  end
+end

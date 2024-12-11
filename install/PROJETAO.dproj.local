@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/01/25 12:32:16.000.039,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/01/25 12:34:34.000.916,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/24 23:37:23.000.270,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/26 23:10:42.000.052,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/15 10:07:43.000.816,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 15:23:21.000.852,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/14 17:35:16.000.246,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/10/30 17:09:31.000.216,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/11/29 13:45:25.000.818,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2024/11/29 13:48:15.000.854,=C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2024/11/29 13:54:38.000.716,C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit3.dfm=C:\Users\CBSistemas\Documents\RAD Studio\Projects\PROJETO.dfm</Transaction>
+    <Transaction>2024/11/29 13:54:38.000.716,C:\Users\CBSistemas\Documents\RAD Studio\Projects\Unit3.pas=C:\Users\CBSistemas\Documents\RAD Studio\Projects\PROJETO.pas</Transaction>
+    <Transaction>2024/11/29 13:54:46.000.992,C:\Users\CBSistemas\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\CBSistemas\Documents\RAD Studio\Projects\PROJETAO.dproj</Transaction>
+    <Transaction>2024/12/09 16:28:58.000.489,C:\Users\CBSistemas\Documents\RAD Studio\Projects\PROJETAO.dproj=C:\Users\CBSistemas\Desktop\PROJETAO\PROJETAO.dproj</Transaction>
+    <Transaction>2024/12/09 16:29:32.000.777,C:\Users\CBSistemas\Desktop\PROJETAO\PROJETAO.dproj=C:\Users\CBSistemas\Desktop\PROJETAO\PROJETAO.dproj</Transaction>
+    <Transaction>2024/12/11 10:29:52.000.365,=C:\Users\CBSistemas\Desktop\Delphiproject\Unit1.pas</Transaction>
+    <Transaction>2024/12/11 10:31:49.000.935,C:\Users\CBSistemas\Desktop\Delphiproject\src\Service.conexao.pas=C:\Users\CBSistemas\Desktop\Delphiproject\Unit1.pas</Transaction>
+    <Transaction>2024/12/11 10:31:49.000.935,C:\Users\CBSistemas\Desktop\Delphiproject\src\Service.conexao.dfm=C:\Users\CBSistemas\Desktop\Delphiproject\Unit1.dfm</Transaction>
+    <Transaction>2024/12/11 10:33:31.000.599,C:\Users\CBSistemas\Desktop\Delphiproject\src\View\View.Principal.dfm=C:\Users\CBSistemas\Documents\RAD Studio\Projects\PROJETO.dfm</Transaction>
+    <Transaction>2024/12/11 10:33:31.000.599,C:\Users\CBSistemas\Desktop\Delphiproject\src\View\View.Principal.pas=C:\Users\CBSistemas\Documents\RAD Studio\Projects\PROJETO.pas</Transaction>
+  </Transactions>
+</BorlandProject>

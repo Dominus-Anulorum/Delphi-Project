@@ -1,0 +1,30 @@
+unit Service.conexao;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes, Data.DB, FIBDataSet, pFIBDataSet, FIBDatabase, pFIBDatabase;
+
+type
+  TServiceConexao = class(TDataModule)
+    DataSource1: TDataSource;
+    Conexao: TpFIBDatabase;
+    pFIBTransaction1: TpFIBTransaction;
+    pFIBDataSet1: TpFIBDataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServiceConexao: TServiceConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

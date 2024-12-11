@@ -1,0 +1,78 @@
+unit Service.conexao;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  Data.DB,
+  FIBDataSet,
+  pFIBDataSet,
+  FIBDatabase,
+  pFIBDatabase,
+  System.IniFiles;
+
+type
+  TServiceConexao = class(TDataModule)
+    DataSource1: TDataSource;
+    Conexao: TpFIBDatabase;
+    pFIBTransaction1: TpFIBTransaction;
+    pFIBDataSet1: TpFIBDataSet;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServiceConexao: TServiceConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+
+procedure TServiceConexao.DataModuleCreate(Sender: TObject);
+var
+
+var
+  LIniFile   :  TIniFile;
+  LDatabase  :  String;
+  LUser_Name :  String;
+  LPassword  :  String;
+  LServidor  :  String;
+  LPorta     :  integer;
+  LCaminho   :  String;
+
+begin
+
+
+
+  try
+
+    TpFIBDatabase.connected:= false;
+    LCaminho   := ExtractFileDir(ParamStr(0)) +'\Login.ini';
+    LIniFile   := TIniFile.Create(LCaminho);
+    LDatabase  := LIniFile.ReadString('Conexao','Database',LDatabase);
+    LServidor  := LIniFile.ReadString('Conexao','Servidor', LServidor);
+    LPorta     := LIniFile.ReadInteger('Conexao','Porta',LPorta);
+
+    LUser_Name :='SYSDBA';
+    LPassword  :='masterkey';
+
+
+
+
+
+
+  finally
+
+
+
+  end;
+
+
+end;

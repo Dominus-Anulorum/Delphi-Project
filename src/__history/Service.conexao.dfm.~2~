@@ -1,0 +1,9 @@
+object ServiceConexao: TServiceConexao
+  OldCreateOrder = False
+  Height = 537
+  Width = 648
+  object DataSource1: TDataSource
+    Left = 256
+    Top = 88
+  end
+end

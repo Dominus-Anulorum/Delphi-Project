@@ -82,9 +82,19 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\..\Documents\RAD Studio\Projects\PROJETO.pas">
+        <DCCReference Include="src\View\View.Principal.pas">
             <Form>ViewPrincipal</Form>
             <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\Service.conexao.pas">
+            <Form>ServiceConexao</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\services\Service.Cadastro.pas">
+            <Form>ServiceCadastro</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

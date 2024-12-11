@@ -1,0 +1,61 @@
+unit Service.conexao;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  Data.DB,
+  FIBDataSet,
+  pFIBDataSet,
+  FIBDatabase,
+  pFIBDatabase,
+  System.IniFiles;
+
+type
+  TServiceConexao = class(TDataModule)
+    DataSource1: TDataSource;
+    Conexao: TpFIBDatabase;
+    pFIBTransaction1: TpFIBTransaction;
+    pFIBDataSet1: TpFIBDataSet;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServiceConexao: TServiceConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+
+procedure TServiceConexao.DataModuleCreate(Sender: TObject);
+var
+
+begin
+    TpFIBDatabase.connected:= false;
+    var
+LIniFile   :  TIniFile;
+LDatabase  :  String;
+LUser_Name :  String;
+LPassword  :  String;
+LServidor  :  String;
+LPorta     :  integer;
+LCaminho   :  String;
+
+begin
+
+  try
+
+
+  finally
+
+  end;
+
+end.
