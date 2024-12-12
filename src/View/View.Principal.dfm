@@ -1,9 +1,10 @@
 ﻿object ViewPrincipal: TViewPrincipal
   Left = 0
   Top = 0
+  BorderStyle = bsSingle
   Caption = 'ViewPrincipal'
-  ClientHeight = 654
-  ClientWidth = 1138
+  ClientHeight = 664
+  ClientWidth = 1148
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,19 +12,22 @@
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnResize = FormResize
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object pnlTopo: TPanel
     Left = 0
     Top = 0
-    Width = 1138
+    Width = 1148
     Height = 89
     Align = alTop
     BevelOuter = bvNone
     Color = 6052956
     ParentBackground = False
     TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = -3
     object pnlLogo: TPanel
       Left = 0
       Top = 0
@@ -149,13 +153,14 @@
       end
     end
     object pnlUsuario: TPanel
-      Left = 871
+      Left = 881
       Top = 0
       Width = 267
       Height = 89
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 2
+      ExplicitLeft = 871
       object pnlLinhaamarela: TPanel
         AlignWithMargins = True
         Left = 3
@@ -266,11 +271,10 @@
         end
       end
       object pnlDadosUsuario: TPanel
-        AlignWithMargins = True
-        Left = 11
-        Top = 3
-        Width = 170
-        Height = 83
+        Left = 8
+        Top = 0
+        Width = 176
+        Height = 89
         Align = alClient
         Alignment = taLeftJustify
         BevelOuter = bvNone
@@ -284,8 +288,8 @@
         object lblPerfil: TLabel
           AlignWithMargins = True
           Left = 3
-          Top = 51
-          Width = 164
+          Top = 57
+          Width = 174
           Height = 22
           Margins.Top = 0
           Margins.Bottom = 10
@@ -307,8 +311,8 @@
           AlignWithMargins = True
           Left = 3
           Top = 10
-          Width = 164
-          Height = 38
+          Width = 174
+          Height = 44
           Margins.Top = 10
           Align = alClient
           Alignment = taRightJustify
@@ -332,15 +336,16 @@
     Left = 0
     Top = 89
     Width = 299
-    Height = 565
+    Height = 575
     Align = alLeft
     BevelOuter = bvNone
     Color = 6316128
     ParentBackground = False
     TabOrder = 1
+    ExplicitHeight = 565
     object pnlSAIR: TPanel
       Left = 0
-      Top = 503
+      Top = 513
       Width = 299
       Height = 62
       Align = alBottom
@@ -348,6 +353,7 @@
       Color = 4144959
       ParentBackground = False
       TabOrder = 0
+      ExplicitTop = 503
       object btnSAIR: TSpeedButton
         AlignWithMargins = True
         Left = 15
@@ -378,7 +384,7 @@
       Left = 0
       Top = 0
       Width = 4
-      Height = 503
+      Height = 513
       ParentCustomHint = False
       Align = alLeft
       BevelOuter = bvNone
@@ -400,6 +406,7 @@
       ShowCaption = False
       ShowHint = False
       TabOrder = 1
+      ExplicitHeight = 503
       object shpMenuSegue: TShape
         AlignWithMargins = True
         Left = 0
@@ -419,7 +426,7 @@
       Left = 4
       Top = 0
       Width = 295
-      Height = 503
+      Height = 513
       ParentCustomHint = False
       Align = alClient
       BevelOuter = bvNone
@@ -441,10 +448,12 @@
       ShowCaption = False
       ShowHint = False
       TabOrder = 2
+      ExplicitLeft = 1
+      ExplicitHeight = 503
       object btnConfig: TSpeedButton
         AlignWithMargins = True
         Left = 0
-        Top = 403
+        Top = 413
         Width = 295
         Height = 50
         Cursor = crHandPoint
@@ -1512,31 +1521,36 @@
   object PnlBackPrincipal: TPanel
     Left = 299
     Top = 89
-    Width = 839
-    Height = 565
+    Width = 849
+    Height = 575
     Align = alClient
     BevelOuter = bvNone
     Color = clWhite
     ParentBackground = False
     TabOrder = 2
+    ExplicitWidth = 839
+    ExplicitHeight = 565
     object PnlRodape: TPanel
       Left = 0
-      Top = 504
-      Width = 839
+      Top = 514
+      Width = 849
       Height = 61
       Align = alBottom
       BevelOuter = bvNone
       Color = 6052956
       ParentBackground = False
       TabOrder = 0
+      ExplicitTop = 504
+      ExplicitWidth = 839
       object pnlLicenciatura: TPanel
-        Left = 485
+        Left = 495
         Top = 0
         Width = 354
         Height = 61
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitLeft = 485
         object pnlLicençaInfo: TPanel
           Left = 0
           Top = 0
@@ -1592,7 +1606,7 @@
       end
       object pnlLInhaamarela2: TPanel
         AlignWithMargins = True
-        Left = 480
+        Left = 490
         Top = 10
         Width = 2
         Height = 41
@@ -1609,26 +1623,31 @@
         ParentBackground = False
         ParentFont = False
         TabOrder = 1
+        ExplicitLeft = 480
       end
     end
     object pnlConteudo: TPanel
       Left = 0
       Top = 0
-      Width = 839
-      Height = 504
+      Width = 849
+      Height = 514
       Align = alClient
       BevelOuter = bvNone
       Color = clWhite
       ParentBackground = False
       TabOrder = 1
-      object Image1: TImage
-        Left = 0
-        Top = 0
-        Width = 839
-        Height = 504
-        Align = alClient
-        AutoSize = True
-        Center = True
+      ExplicitWidth = 839
+      ExplicitHeight = 504
+      DesignSize = (
+        849
+        514)
+      object LogoConteudo: TImage
+        Left = 112
+        Top = 20
+        Width = 599
+        Height = 464
+        Anchors = []
+        Enabled = False
         Picture.Data = {
           0B546478504E47496D61676589504E470D0A1A0A0000000D4948445200000257
           000001D008060000008C664F79000000206348524D00007A26000080840000FA
@@ -4122,8 +4141,8 @@
           300CC3882126AE0CC3300CC3306288892BC3300CC3308C1862E2CA300CC3300C
           238698B8320CC3300CC3882126AE0CC3300CC3306288892BC3300CC3308C9841
           F4FF68B561EC267CF37E0000000049454E44AE426082}
-        ExplicitLeft = 56
-        ExplicitTop = -69
+        Proportional = True
+        Stretch = True
       end
     end
   end

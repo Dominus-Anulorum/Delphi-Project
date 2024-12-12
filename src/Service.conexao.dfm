@@ -5,8 +5,8 @@ object ServiceConexao: TServiceConexao
   Width = 648
   object dsFiliais: TDataSource
     DataSet = fds_Filiais
-    Left = 256
-    Top = 88
+    Left = 224
+    Top = 32
   end
   object Conexao: TpFIBDatabase
     Connected = True
@@ -25,8 +25,8 @@ object ServiceConexao: TServiceConexao
   object Trans_Conexao: TpFIBTransaction
     Active = True
     DefaultDatabase = Conexao
-    Left = 136
-    Top = 48
+    Left = 144
+    Top = 32
   end
   object fds_Filiais: TpFIBDataSet
     UpdateSQL.Strings = (
@@ -85,8 +85,8 @@ object ServiceConexao: TServiceConexao
     Active = True
     Transaction = Trans_Conexao
     Database = Conexao
-    Left = 392
-    Top = 160
+    Left = 288
+    Top = 32
     object fds_FiliaisFIL_COD: TFIBIntegerField
       FieldName = 'FIL_COD'
     end

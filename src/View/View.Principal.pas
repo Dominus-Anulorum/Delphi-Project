@@ -62,7 +62,7 @@ type
     Label1: TLabel;
     pnlLInhaamarela2: TPanel;
     pnlConteudo: TPanel;
-    Image1: TImage;
+    LogoConteudo: TImage;
 
 
     procedure btnSAIRClick(Sender: TObject);
@@ -86,11 +86,7 @@ type
     procedure btnCaixaMouseLeave(Sender: TObject);
     procedure btnConfigMouseEnter(Sender: TObject);
     procedure btnConfigMouseLeave(Sender: TObject);
-
-
-
-
-
+    procedure FormResize(Sender: TObject);
 
   private
    procedure BarraMenuSegue (Sender: TObject);
@@ -104,14 +100,6 @@ var
 implementation
 
 {$R *.dfm}
-
-
-
-
-
-
-
-
 
 //MUDANÇAS EM COR E INTERAÇÕES COM USUARIO ESTETICAS
 
@@ -217,9 +205,22 @@ procedure TViewPrincipal.btnSAIRClick(Sender: TObject);
       Application.Terminate;
     end;
 
+procedure TViewPrincipal.FormResize(Sender: TObject);
+begin
 
-     //COLOCA A BARRA INICIANDO NO BOTAO CLIENTES
-    procedure TViewPrincipal.FormShow(Sender: TObject);
+    // Centraliza horizontalmente
+  LogoConteudo.Left := (Self.ClientWidth - LogoConteudo.Width) div 3;
+           LogoConteudo.Left:= LogoConteudo.Left - 40;
+  // Centraliza verticalmente
+  LogoConteudo.Top := (Self.ClientHeight - LogoConteudo.Height) div 3;
+  LogoConteudo.Top:= LogoConteudo.Top - 40;
+
+  //ShowMessage(Format('Form Width: %d, Height: %d', [Self.ClientWidth, Self.ClientHeight]));
+ // ShowMessage(Format('Logo Width: %d, Height: %d', [LogoConteudo.Width, LogoConteudo.Height]));
+ end;
+
+//COLOCA A BARRA INICIANDO NO BOTAO CLIENTES
+procedure TViewPrincipal.FormShow(Sender: TObject);
     begin
       BarraMenuSegue(btnClientes);
     end;
